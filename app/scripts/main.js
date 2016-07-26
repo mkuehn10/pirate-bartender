@@ -7,6 +7,7 @@ $(function() {
         self.answer = ko.observable('false');
     };
 
+
     /* Ingredient constructor */
     var Ingredient = function(typeOfIngredient, listOfIngredients) {
         var self = this;
