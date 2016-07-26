@@ -22,7 +22,7 @@ $(function() {
     var Preferences = function() {
         var self = this;
         self.preferenceList = ko.observableArray([]);
-        self.test = "test";
+        self.test = 'test';
     };
 
     Preferences.prototype.addPreference = function(preference) {
