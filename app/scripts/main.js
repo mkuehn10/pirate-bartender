@@ -45,7 +45,7 @@ $(function () {
 
   Bartender.prototype.createDrink = function (preferences) {
     // console.log(this.currentDrinkIngredients);
-    console.log("Creating Drink");
+    console.log('Creating Drink');
     // ko.utils.arrayForEach(this.currentDrinkIngredients(), function(ingredient) {
     //   console.log(getRandomInt(1, 3) + ' ' + ingredient);
     // });
