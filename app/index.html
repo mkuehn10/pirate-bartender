@@ -31,7 +31,10 @@
         </div>
         <div id="bartender">
             <p>Arr matey, I be makin' you somethin that has the following characteristics: <span data-bind="text: preferences.formattedPreferences()"></span></p>
-            <p data-bind="text: bartender.formattedIngredients()"></p>
+            <p data-bind="visible: bartender.formattedIngredients().length > 0">Here are your ingredients:
+            <ul data-bind="foreach: bartender.currentDrinkIngredients()">
+          <li data-bind="text: $data"></li>
+        </ul>
         </div>
     </div>
     <!-- build:js scripts/vendor.js -->
